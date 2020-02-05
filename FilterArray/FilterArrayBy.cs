@@ -4,6 +4,11 @@ namespace FilterArray
 {
     public abstract class FilterArrayBy
     {
+        /// <summary>Filters the array.</summary>
+        /// <param name="arr">The arr.</param>
+        /// <returns>Filtered array.</returns>
+        /// <exception cref="System.ArgumentNullException">arr - Array is null.</exception>
+        /// <exception cref="System.ArgumentException">Array is empty.</exception>
         public int[] FilterArray(int[] arr)
         {
             if (arr == null)
@@ -33,6 +38,9 @@ namespace FilterArray
             return result;
         }
 
+        /// <summary>Validates the specified number.</summary>
+        /// <param name="number">The number.</param>
+        /// <returns>True if number is correct, false if not.</returns>
         public abstract bool Validate(int number);
     }
 }

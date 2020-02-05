@@ -6,6 +6,10 @@ namespace FilterArray
 {
     public class FilterArrayByKeyPalindrome : FilterArrayBy
     {
+        /// <summary>Validates the specified value.</summary>
+        /// <param name="value">The value.</param>
+        /// <returns>True if value is correct, false if not.</returns>
+        /// <exception cref="System.ArgumentOutOfRangeException">value - Value cannot be less than zero.</exception>
         public override bool Validate(int value)
         {
             if (value < 0)

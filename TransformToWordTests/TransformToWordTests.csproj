@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilterArray\Filters.Advanced.csproj" />
+    <ProjectReference Include="..\TransformerToWords\TransformerToWords.csproj" />
   </ItemGroup>
 
 </Project>

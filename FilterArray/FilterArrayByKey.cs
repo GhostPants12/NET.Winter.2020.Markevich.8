@@ -8,11 +8,16 @@ namespace FilterArray
     {
         private int key;
 
+        /// <summary>Initializes a new instance of the <see cref="FilterArrayByKey"/> class.</summary>
+        /// <param name="key">The key.</param>
         public FilterArrayByKey(int key)
         {
             this.Key = key;
         }
 
+        /// <summary> Gets the key.</summary>
+        /// <value>The key.</value>
+        /// <exception cref="System.ArgumentOutOfRangeException">value - Key is less than zero or more than 9.</exception>
         public int Key
         {
             get
@@ -31,6 +36,9 @@ namespace FilterArray
             }
         }
 
+        /// <summary>Validates the specified number.</summary>
+        /// <param name="number">The number.</param>
+        /// <returns>True if number is correct, false if not.</returns>
         public override bool Validate(int number)
         {
             do
