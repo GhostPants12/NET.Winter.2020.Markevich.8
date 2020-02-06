@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterArrayTests", "FilterA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterArrayByKeyTests", "FilterArrayByKeyTests\FilterArrayByKeyTests.csproj", "{FE9C62E8-B01C-4963-9D0F-0889B87E3E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformerToWords", "TransformerToWords\TransformerToWords.csproj", "{18F6F49B-404C-4447-907A-5D420A973CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransformerToWords", "TransformerToWords\TransformerToWords.csproj", "{18F6F49B-404C-4447-907A-5D420A973CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformToWordTests", "TransformToWordTests\TransformToWordTests.csproj", "{4F66BE49-FB47-48C3-A5FF-7AACB0E95B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransformToWordTests", "TransformToWordTests\TransformToWordTests.csproj", "{4F66BE49-FB47-48C3-A5FF-7AACB0E95B67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExtension", "ArrayFilter\ArrayExtension.csproj", "{FFCAB015-C4E1-45B8-A236-7E15C52BB78F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExtensionTests", "ArrayExtensionTests\ArrayExtensionTests.csproj", "{039781B5-F839-4CE9-86C5-35910832481C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{4F66BE49-FB47-48C3-A5FF-7AACB0E95B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F66BE49-FB47-48C3-A5FF-7AACB0E95B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F66BE49-FB47-48C3-A5FF-7AACB0E95B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCAB015-C4E1-45B8-A236-7E15C52BB78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCAB015-C4E1-45B8-A236-7E15C52BB78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCAB015-C4E1-45B8-A236-7E15C52BB78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCAB015-C4E1-45B8-A236-7E15C52BB78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{039781B5-F839-4CE9-86C5-35910832481C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{039781B5-F839-4CE9-86C5-35910832481C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{039781B5-F839-4CE9-86C5-35910832481C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{039781B5-F839-4CE9-86C5-35910832481C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
