@@ -7,6 +7,16 @@ namespace TransformerToWords
 {
     public class DoubleToStringTransformer : AbstractTransformer
     {
+        /// <summary>  Dictionary that contains word match for a exceptional double value.</summary>
+        private readonly Dictionary<double, string> doubleToWord = new Dictionary<double, string>()
+        {
+            { double.Epsilon, "Epsilon" },
+            { double.NaN, "Not a number" },
+            { double.NegativeInfinity, "Negative infinity" },
+            { double.PositiveInfinity, "Positive infinity" },
+            { 0, "zero" },
+        };
+
         /// <summary>Dictionary that contains word match for a character.</summary>
         private readonly Dictionary<char, string> characterToWord = new Dictionary<char, string>
         {
@@ -41,29 +51,12 @@ namespace TransformerToWords
         /// <param name="result">The string value.</param>
         protected override void CheckValue(ref string result)
         {
-            if (this.Value.ToString(CultureInfo.InvariantCulture) == double.Epsilon.ToString(CultureInfo.InvariantCulture))
+            foreach (KeyValuePair<double, string> keyValue in this.doubleToWord)
             {
-                result = "Epsilon";
-            }
-
-            if (double.IsNaN(this.Value))
-            {
-                result = "Not a number";
-            }
-
-            if (double.IsPositiveInfinity(this.Value))
-            {
-                result = "Positive infinity";
-            }
-
-            if (double.IsNegativeInfinity(this.Value))
-            {
-                result = "Negative infinity";
-            }
-
-            if (this.Value == 0)
-            {
-                result = "zero";
+                if (this.Value.Equals(keyValue.Key))
+                {
+                    result = keyValue.Value;
+                }
             }
         }
 
