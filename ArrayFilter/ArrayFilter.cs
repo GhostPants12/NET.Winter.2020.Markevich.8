@@ -4,6 +4,14 @@ namespace ArrayFilter
 {
     public static class ArrayFilter
     {
+        /// <summary>Filters the array by predicate.</summary>
+        /// <param name="arr">The array to filter.</param>
+        /// <param name="predicate">The predicate container.</param>
+        /// <returns>The filtered array.</returns>
+        /// <exception cref="ArgumentNullException">arr - Array is null.
+        /// or
+        /// predicate - The filter is null.</exception>
+        /// <exception cref="ArgumentException">Array is empty.</exception>
         public static int[] FilterBy(this int[] arr, IPredicate predicate)
         {
             if (arr == null)
